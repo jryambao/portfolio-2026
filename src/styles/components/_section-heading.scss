@@ -1,0 +1,12 @@
+.section-heading {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.split-heading {
+  display: flex;
+  max-width: none;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}

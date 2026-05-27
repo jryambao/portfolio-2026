@@ -1,0 +1,159 @@
+@media (max-width: 1120px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .highlight-band,
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .topbar {
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    min-height: 68px;
+  }
+
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .close-button {
+    display: inline-flex;
+    align-self: flex-end;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 78px;
+    right: 16px;
+    left: 16px;
+    z-index: 40;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+
+    &.is-open {
+      display: flex;
+    }
+
+    a {
+      min-height: 48px;
+      justify-content: center;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  .theme-toggle {
+    justify-self: end;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 46px;
+  }
+
+  h1 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .detail-columns,
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 660px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    width: min(100% - 24px, var(--max-width));
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-copy {
+    display: none;
+  }
+
+  .section-pad {
+    width: min(100% - 24px, var(--max-width));
+    padding: 54px 0;
+  }
+
+  .hero {
+    gap: 30px;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primary-action,
+  .secondary-action {
+    width: 100%;
+  }
+
+  .contact-strip {
+    flex-direction: column;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  .metric-grid,
+  .highlight-band,
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-heading,
+  .timeline-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-marker {
+    display: none;
+  }
+
+  .ankor-section {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .theme-toggle span {
+    display: none;
+  }
+
+  .status-row {
+    align-items: flex-start;
+  }
+}

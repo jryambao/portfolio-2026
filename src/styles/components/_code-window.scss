@@ -1,0 +1,41 @@
+.code-window {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0d0f12;
+}
+
+:root[data-theme="light"] .code-window {
+  background: #191916;
+}
+
+.window-dots {
+  display: flex;
+  gap: 7px;
+  padding: 13px 14px;
+  border-bottom: 1px solid #2e3339;
+
+  span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--rose);
+
+    &:nth-child(2) {
+      background: var(--warm);
+    }
+
+    &:nth-child(3) {
+      background: var(--accent);
+    }
+  }
+}
+
+pre {
+  overflow-x: auto;
+  margin: 0;
+  padding: 18px;
+  color: #eef6ef;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}

@@ -1,0 +1,9 @@
+.site-shell {
+  min-height: 100vh;
+}
+
+.section-pad {
+  width: min(100% - 32px, var(--max-width));
+  margin: 0 auto;
+  padding: 76px 0;
+}

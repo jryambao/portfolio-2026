@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(62, 183, 168, 0.12), transparent 34%),
+    linear-gradient(315deg, rgba(217, 154, 56, 0.1), transparent 28%),
+    var(--bg);
+  color: var(--text);
+}
+
+body,
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 70%, white 20%);
+  outline-offset: 3px;
+}
