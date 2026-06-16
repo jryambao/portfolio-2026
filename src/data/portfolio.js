@@ -72,8 +72,8 @@ export const projects = [
     detail: 'Real estate listing website with live data feeds and editor-friendly content management.',
   },
   {
-    name: 'Veladere',
-    url: 'https://veladere.com',
+    name: 'Vela Dare',
+    url: 'https://www.veladare.com/',
     category: 'WordPress',
     detail: 'WordPress website delivered from design implementation through responsive production-ready pages.',
   },
