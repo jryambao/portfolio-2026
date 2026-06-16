@@ -74,6 +74,7 @@ export const projects = [
   {
     name: 'Vela Dare',
     url: 'https://www.veladare.com/',
+    image: '/project-previews/vela-dare.jpg',
     category: 'WordPress',
     detail: 'WordPress website delivered from design implementation through responsive production-ready pages.',
   },

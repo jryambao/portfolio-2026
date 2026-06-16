@@ -8,6 +8,10 @@ function getScreenshotUrl(url) {
   return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
 }
 
+function getProjectImage(project) {
+  return project.image ?? getScreenshotUrl(project.url);
+}
+
 export function Projects({ projects }) {
   return (
     <SectionReveal className="section-pad ankor-section" id="ankor-work">
@@ -32,7 +36,7 @@ export function Projects({ projects }) {
               rel="noreferrer"
               aria-label={`Open ${project.name}`}
             >
-              <img src={getScreenshotUrl(project.url)} alt={`${project.name} website preview`} loading="lazy" />
+              <img src={getProjectImage(project)} alt={`${project.name} website preview`} loading="lazy" />
             </a>
             <div className="project-body">
               <div>
