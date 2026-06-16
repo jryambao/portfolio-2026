@@ -8,15 +8,15 @@ export function Hero({ contacts, stats }) {
   return (
     <SectionReveal className="hero section-pad" id="profile" direction="none" amount={0.12}>
       <ScrollReveal className="hero-copy" direction="right" amount={0.15}>
-        <p className="eyebrow">Frontend Web Developer / AEM Developer / WordPress Developer</p>
+        <p className="eyebrow">Frontend / CMS Developer | WordPress | AEM</p>
         <h1>John Ralph Yambao</h1>
         <p className="hero-text">
           I build responsive, performant websites across WordPress and Adobe Experience Manager, covering Figma-to-code
-          implementation, custom components, API integrations, and launch support.
+          implementation, custom themes, ACF content systems, AEM components, API integrations, and frontend performance.
         </p>
         <div className="hero-actions">
           <a className="primary-action" href="#ankor-work" onClick={(event) => handleHashLinkClick(event, '#ankor-work')}>
-            View Ankor Work
+            View Production Work
             <ArrowUpRight size={18} />
           </a>
           <a className="secondary-action" href="/john-ralph-yambao-resume.pdf" target="_blank" rel="noreferrer">
@@ -61,7 +61,8 @@ export function Hero({ contacts, stats }) {
   'React.js',
   'WordPress',
   'Adobe Experience Manager',
-  'API-driven websites'
+  'API-driven websites',
+  'Frontend performance'
 ];`}</pre>
         </div>
       </ScrollReveal>

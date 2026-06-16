@@ -1,25 +1,31 @@
 export const contacts = [
   { label: 'johnralph266@gmail.com', href: 'mailto:johnralph266@gmail.com', type: 'email' },
-  { label: '0956-885-8581', href: 'tel:09568858581', type: 'phone' },
+  { label: '+63 956 885 8581', href: 'tel:+639568858581', type: 'phone' },
   { label: 'Santa Rosa, Laguna, PH', href: '#contact', type: 'location' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/john-ralph-y-595473137/', type: 'linkedin' },
+  { label: 'GitHub', href: 'https://github.com/ankor-ralph', type: 'github' },
 ];
 
 export const skillGroups = [
   {
     title: 'Frontend',
-    items: ['HTML', 'CSS / SCSS', 'JavaScript', 'jQuery', 'React.js', 'Bootstrap', 'Tailwind CSS'],
+    items: ['HTML5', 'CSS3', 'SCSS', 'JavaScript (ES6+)', 'TypeScript', 'jQuery', 'React.js', 'Responsive design'],
   },
   {
-    title: 'CMS & Platforms',
-    items: ['WordPress', 'Elementor', 'WooCommerce', 'Adobe Experience Manager', 'Adobe Target'],
+    title: 'WordPress',
+    items: ['Custom themes', 'ACF Pro', 'Elementor', 'WooCommerce', 'WP Engine', 'Performance optimization'],
   },
   {
     title: 'AEM / Backend',
-    items: ['Java', 'PHP', 'Sling Models', 'HTL / Sightly', 'OSGi', 'CRXDE', 'Groovy Script', 'JCR'],
+    items: ['AEM components', 'HTL / Sightly', 'Sling Models', 'OSGi', 'Java', 'PHP', 'Laravel', 'MySQL', 'Groovy scripts'],
   },
   {
-    title: 'Tools',
-    items: ['Git', 'GitHub', 'Jira', 'Azure DevOps', 'Photoshop', 'Figma', 'WP Engine', 'FileZilla', 'SFTP'],
+    title: 'Tools / DevOps',
+    items: ['Git', 'GitHub', 'CI/CD workflows', 'Azure DevOps', 'Jira', 'cPanel', 'Figma', 'Photoshop', 'FileZilla / SFTP'],
+  },
+  {
+    title: 'Marketing / Analytics',
+    items: ['Google Tag Manager (GTM)', 'Adobe Target'],
   },
   {
     title: 'AI Tooling',
@@ -28,9 +34,9 @@ export const skillGroups = [
 ];
 
 export const highlights = [
-  '3+ years building responsive, performant WordPress and AEM websites.',
+  '3+ years building production WordPress and AEM websites.',
   'Full component lifecycle from Figma conversion to APIs, backend services, and launch support.',
-  '85+ PageSpeed scores through image optimization, lazy loading, caching, and clean frontend code.',
+  'Delivered 6 live WordPress sites for yacht charter and real estate clients.',
   'Recognized as Best Performer of 2024 within the Evoke development team.',
 ];
 
@@ -39,66 +45,67 @@ export const projects = [
     name: 'Polaris Yacht Charter',
     url: 'https://polarisyachtcharter.com',
     category: 'Yacht charter',
-    detail: 'Responsive WordPress build for premium charter discovery and lead generation.',
+    detail: 'WordPress yacht charter site delivered from Figma to production.',
   },
   {
     name: 'Mint Charter',
     url: 'https://mintcharter.com',
     category: 'Yacht charter',
-    detail: 'Client-editable content structures and polished frontend presentation.',
+    detail: 'WordPress yacht charter site with responsive frontend implementation.',
   },
   {
     name: 'Split Yacht Charter',
     url: 'https://splityachtcharter.com',
     category: 'Booking platform',
-    detail: 'NAUSYS API integration for listings, availability, dynamic pricing, and booking flows.',
+    detail: 'Booking platform integrated with NAUSYS API for availability, pricing, yacht listings, and booking workflows.',
   },
   {
     name: 'EJ Yachts',
     url: 'https://ejyachts.com',
     category: 'Yacht listings',
-    detail: 'Dynamic data feeds and production-ready WordPress frontend delivery.',
+    detail: 'Dynamic yacht listing website using third-party data integrations.',
   },
   {
     name: 'Iman Real Estate',
-    url: 'https://imanrealestate.com',
+    url: 'https://www.imanrealestate.com',
     category: 'Real estate',
-    detail: 'Real estate website with dynamic content and company API integrations.',
+    detail: 'Real estate listing website with live data feeds and editor-friendly content management.',
+  },
+  {
+    name: 'Veladere',
+    url: 'https://veladere.com',
+    category: 'WordPress',
+    detail: 'WordPress website delivered from design implementation through responsive production-ready pages.',
   },
 ];
 
 export const experience = [
   {
     role: 'Frontend WordPress Developer',
-    company: 'Ankor IO / Ingnius',
+    company: 'Ankor / Ingnius',
     period: 'Oct 2025 - Present',
-    meta: 'Yacht charter & real estate · Primary hosting: WP Engine · Live projects: Polaris Yacht Charter, Mint Charter, Split Yacht Charter, EJ Yachts, Iman Real Estate',
-    tags: ['WordPress', 'WooCommerce', 'WP Engine', 'ACF Pro', 'NAUSYS API', 'FileZilla', 'SFTP'],
+    meta: 'Yacht charter and real estate - WordPress, WooCommerce, ACF Pro, NAUSYS API, WP Engine, HostArmada, SiteGround',
+    tags: ['WordPress', 'WooCommerce', 'ACF Pro', 'NAUSYS API', 'WP Engine', 'HostArmada', 'SiteGround'],
     bullets: [
-      'Converted Figma designs into fully responsive WordPress websites for yacht charter and real estate clients.',
-      'Built Split Yacht Charter as a booking platform integrated with the NAUSYS API, covering yacht listings, real-time availability, dynamic pricing, and end-to-end booking workflows, with WooCommerce handling the payment system.',
-      'Implemented company APIs and dynamic data feeds for EJ Yachts and Iman Real Estate.',
-      'Used Advanced Custom Fields Pro to build flexible, easily editable content structures so clients can manage dynamic page content without touching code.',
-      'Managed client site migrations using FileZilla and SFTP for direct server access, adapting quickly to each client hosting environment and CMS setup.',
-      'Conducted GitHub PR reviews to enforce code quality, responsiveness, and team development standards.',
-      'Handled staging environments, deployments across WP Engine, HostArmada, and SiteGround, debugging, and ongoing client updates.',
-      'Consistently achieved 85+ performance scores on Google PageSpeed Insights through image optimization, lazy loading, caching strategies, and clean frontend code.',
-      'Used AI coding tools including Codex, Claude, Gemini, and ChatGPT to accelerate development while maintaining quality standards.',
+      'Delivered 5 production WordPress websites end-to-end for yacht charter and real estate clients, from Figma handoff through live deployment.',
+      'Built Split Yacht Charter as a WooCommerce-based booking platform integrated with the NAUSYS API, covering real-time availability, dynamic pricing, yacht listings, and booking workflows.',
+      'Integrated third-party APIs and live data feeds for EJ Yachts and Iman Real Estate, enabling dynamic property and vessel listings with less manual content work.',
+      'Built editor-friendly ACF Pro content structures and optimized frontend performance through lazy loading, minification, and semantic markup.',
+      'Managed staging and production deployments across WP Engine, HostArmada, and SiteGround while reviewing PRs for responsive, performance-focused delivery.',
     ],
   },
   {
     role: 'Webmaster & AEM Developer (Full-Stack)',
     company: 'Evoke',
     period: 'Jul 2023 - Oct 2025',
-    meta: 'Adobe Experience Manager · Java · HTL · Sling Models · Adobe Target',
+    meta: 'Adobe Experience Manager - Java, HTL, Sling Models, OSGi, Adobe Target',
     tags: ['AEM', 'Java', 'HTL', 'Sling Models', 'OSGi', 'Groovy Script', 'Adobe Target'],
     bullets: [
-      'Designed custom AEM components, templates, workflows, and dialogs to support editorial and business needs.',
-      'Developed Sling Models, servlets, and OSGi services for dynamic content delivery.',
-      'Spearheaded migration of existing websites onto Adobe Experience Manager, managing JCR content structures throughout the transition.',
-      'Wrote Groovy scripts for debugging, environment configuration, and data migrations, reducing downtime and accelerating delivery.',
-      'Implemented Adobe Target for audience-based personalization and A/B testing.',
-      'Worked within Agile sprint cycles using Jira and Azure DevOps, participating in bi-weekly deploys and sprint planning.',
+      'Designed and built custom AEM components, templates, workflows, and dialogs from scratch for enterprise-scale content requirements.',
+      'Developed Sling Models, servlets, and OSGi services in Java to support dynamic content delivery and reduce hardcoded frontend dependencies.',
+      'Led website migration work into Adobe Experience Manager, managing JCR content structures and maintaining data integrity during transitions.',
+      'Authored Groovy scripts for debugging, environment configuration, and data migration tasks, reducing manual release and troubleshooting effort.',
+      'Implemented Adobe Target for personalization and A/B testing while contributing to Agile sprint planning, bi-weekly deployments, and code reviews.',
       'Recognized as Best Performer of 2024 within the development team.',
     ],
   },
@@ -108,10 +115,9 @@ export const experience = [
     period: 'Aug 2022 - May 2023',
     tags: ['WordPress', 'Custom Themes', 'PSD/Figma conversion'],
     bullets: [
-      'Converted PSD and Figma designs into responsive WordPress websites using custom themes.',
-      'Optimized frontend code for performance, cross-browser compatibility, and fast load times.',
-      'Maintained client websites while preserving brand consistency and visual accuracy.',
-      'Used Photoshop to process and optimize images for web delivery.',
+      'Converted PSD and Figma designs into fully responsive, cross-browser-compatible WordPress websites using custom themes.',
+      'Optimized frontend code and imagery for faster page loads, stronger Lighthouse scores, and better visual quality across client projects.',
+      'Maintained multiple client websites simultaneously while preserving brand consistency and design accuracy across deliverables.',
     ],
   },
 ];
@@ -142,13 +148,13 @@ export const education = [
 export const navItems = [
   { label: 'Profile', href: '#profile' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Ankor Work', href: '#ankor-work' },
+  { label: 'Production Work', href: '#ankor-work' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const stats = [
   { value: '3+', label: 'Years experience' },
-  { value: '5', label: 'Ankor live projects' },
-  { value: '85+', label: 'PageSpeed target' },
+  { value: '6', label: 'Live WordPress projects' },
+  { value: '2', label: 'CMS platforms' },
 ];

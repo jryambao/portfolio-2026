@@ -12,8 +12,8 @@ export function Projects({ projects }) {
   return (
     <SectionReveal className="section-pad ankor-section" id="ankor-work">
       <SectionHeading
-        eyebrow="Ankor IO / Ingnius"
-        title="Live projects shipped for yacht charter and real estate clients"
+        eyebrow="Selected Production Projects"
+        title="WordPress builds shipped for yacht charter and real estate clients"
         className="split-heading"
       >
         <a className="text-link" href="#experience" onClick={(event) => handleHashLinkClick(event, '#experience')}>
