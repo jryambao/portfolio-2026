@@ -10,11 +10,14 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(220px, 1fr));
-  gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
 }
 
 .project-card {
+  display: grid;
+  grid-template-columns: minmax(300px, 38%) minmax(0, 1fr);
+  min-height: 230px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -28,7 +31,7 @@
 
 .project-image {
   display: block;
-  aspect-ratio: 16 / 10;
+  min-height: 100%;
   overflow: hidden;
   background: var(--surface-strong);
 
@@ -44,10 +47,13 @@
 
 .project-body {
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: center;
   gap: 14px;
-  padding: 18px;
+  padding: 28px 32px;
 
   p:not(.project-category) {
+    max-width: 680px;
     margin: 0;
     color: var(--muted);
     font-size: 0.94rem;
@@ -55,6 +61,7 @@
   }
 
   a {
+    justify-self: start;
     display: inline-flex;
     align-items: center;
     gap: 7px;

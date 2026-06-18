@@ -1,6 +1,6 @@
 @media (max-width: 1120px) {
-  .project-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .project-card {
+    grid-template-columns: minmax(270px, 40%) minmax(0, 1fr);
   }
 
   .highlight-band,
@@ -73,6 +73,10 @@
     grid-template-columns: 1fr;
   }
 
+  .project-body {
+    padding: 24px;
+  }
+
   .contact-actions {
     justify-content: flex-start;
   }
@@ -125,9 +129,22 @@
 
   .metric-grid,
   .highlight-band,
-  .skills-grid,
-  .project-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .project-image {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .project-body {
+    padding: 20px;
   }
 
   .split-heading,
