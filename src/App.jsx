@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/layout/Header.jsx';
 import { ScrollProgress } from './components/motion/ScrollProgress.jsx';
 import { Contact } from './components/sections/Contact.jsx';
@@ -37,6 +38,8 @@ function App() {
         <Details abilities={abilities} education={education} />
         <Contact />
       </main>
+
+      <Analytics />
     </div>
   );
 }
