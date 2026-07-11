@@ -36,7 +36,7 @@ export const skillGroups = [
 export const highlights = [
   '3+ years building production WordPress and AEM websites.',
   'Full component lifecycle from Figma conversion to APIs, backend services, and launch support.',
-  'Delivered 6 live WordPress sites for yacht charter and real estate clients.',
+  'Delivered 4 selected live WordPress sites for yacht charter and real estate clients.',
   'Recognized as Best Performer of 2024 within the Evoke development team.',
 ];
 
@@ -48,22 +48,10 @@ export const projects = [
     detail: 'WordPress yacht charter site delivered from Figma to production.',
   },
   {
-    name: 'Mint Charter',
-    url: 'https://mintcharter.com',
-    category: 'Yacht charter',
-    detail: 'WordPress yacht charter site with responsive frontend implementation.',
-  },
-  {
     name: 'Split Yacht Charter',
     url: 'https://splityachtcharter.com',
     category: 'Booking platform',
     detail: 'Booking platform integrated with NAUSYS API for availability, pricing, yacht listings, and booking workflows.',
-  },
-  {
-    name: 'EJ Yachts',
-    url: 'https://ejyachts.com',
-    category: 'Yacht listings',
-    detail: 'Dynamic yacht listing website using third-party data integrations.',
   },
   {
     name: 'Iman Real Estate',
@@ -72,8 +60,8 @@ export const projects = [
     detail: 'Real estate listing website with live data feeds and editor-friendly content management.',
   },
   {
-    name: 'Vela Dare',
-    url: 'https://www.veladare.com/',
+    name: 'Veladare',
+    url: 'https://veladare.com/',
     image: '/project-previews/vela-dare.jpg',
     category: 'WordPress',
     detail: 'WordPress website delivered from design implementation through responsive production-ready pages.',
@@ -88,9 +76,9 @@ export const experience = [
     meta: 'Yacht charter and real estate - WordPress, WooCommerce, ACF Pro, NAUSYS API, WP Engine, HostArmada, SiteGround',
     tags: ['WordPress', 'WooCommerce', 'ACF Pro', 'NAUSYS API', 'WP Engine', 'HostArmada', 'SiteGround'],
     bullets: [
-      'Delivered 5 production WordPress websites end-to-end for yacht charter and real estate clients, from Figma handoff through live deployment.',
+      'Delivered 4 selected production WordPress websites end-to-end for yacht charter and real estate clients, from Figma handoff through live deployment.',
       'Built Split Yacht Charter as a WooCommerce-based booking platform integrated with the NAUSYS API, covering real-time availability, dynamic pricing, yacht listings, and booking workflows.',
-      'Integrated third-party APIs and live data feeds for EJ Yachts and Iman Real Estate, enabling dynamic property and vessel listings with less manual content work.',
+      'Integrated third-party APIs and live data feeds for client listing sites, enabling dynamic property and vessel listings with less manual content work.',
       'Built editor-friendly ACF Pro content structures and optimized frontend performance through lazy loading, minification, and semantic markup.',
       'Managed staging and production deployments across WP Engine, HostArmada, and SiteGround while reviewing PRs for responsive, performance-focused delivery.',
     ],
@@ -156,6 +144,6 @@ export const navItems = [
 
 export const stats = [
   { value: '3+', label: 'Years experience' },
-  { value: '6', label: 'Live WordPress projects' },
+  { value: '4', label: 'Selected WordPress projects' },
   { value: '2', label: 'CMS platforms' },
 ];
