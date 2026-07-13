@@ -2,8 +2,19 @@
   min-height: 100vh;
 }
 
-.section-pad {
-  width: min(100% - 32px, var(--max-width));
-  margin: 0 auto;
-  padding: 76px 0;
+.section-shell {
+  width: min(calc(100% - (var(--gutter) * 2)), var(--max-width));
+  margin-inline: auto;
+}
+
+.section-intro {
+  max-width: 1040px;
+}
+
+.section-deck {
+  max-width: 780px;
+  margin-bottom: 0;
+  color: var(--graphite);
+  font-size: clamp(1.18rem, 1.8vw, 1.6rem);
+  line-height: 1.5;
 }

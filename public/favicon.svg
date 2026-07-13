@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>JRY field trace</title>
+  <rect width="64" height="64" rx="10" fill="#111310" />
+  <rect x="5" y="5" width="54" height="54" rx="7" fill="none" stroke="#353a34" stroke-width="2" />
+  <path d="M13 17h34v11H33v14c0 5-4 9-9 9H13" fill="none" stroke="#e7e2d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+  <path d="M47 17h5M13 51h5" fill="none" stroke="#58b9ad" stroke-linecap="round" stroke-width="4" />
+  <circle cx="52" cy="17" r="3" fill="#58b9ad" />
+  <circle cx="13" cy="51" r="3" fill="#58b9ad" />
+</svg>

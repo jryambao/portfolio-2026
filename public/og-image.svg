@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">John Ralph Yambao portfolio</title>
+  <desc id="description">Frontend, WordPress, and AEM developer portfolio social preview</desc>
+  <rect width="1200" height="630" fill="#f3f6f5" />
+  <rect x="32" y="32" width="1136" height="566" fill="none" stroke="#aeb9bc" />
+  <line x1="348" y1="32" x2="348" y2="598" stroke="#aeb9bc" />
+  <text x="76" y="102" fill="#2557d6" font-family="Consolas, monospace" font-size="18" letter-spacing="2">CAREER FIELD LOG</text>
+  <text x="76" y="190" fill="#172126" font-family="Arial, sans-serif" font-size="52" font-weight="700">John Ralph</text>
+  <text x="76" y="246" fill="#172126" font-family="Arial, sans-serif" font-size="52" font-weight="700">Yambao</text>
+  <line x1="76" y1="286" x2="304" y2="286" stroke="#aeb9bc" />
+  <text x="76" y="330" fill="#566167" font-family="Consolas, monospace" font-size="15">FRONTEND / WORDPRESS / AEM</text>
+  <text x="402" y="172" fill="#172126" font-family="Arial, sans-serif" font-size="58" font-weight="700">Websites where design,</text>
+  <text x="402" y="242" fill="#172126" font-family="Arial, sans-serif" font-size="58" font-weight="700">content systems, and</text>
+  <text x="402" y="312" fill="#172126" font-family="Arial, sans-serif" font-size="58" font-weight="700">production code meet.</text>
+  <text x="402" y="376" fill="#566167" font-family="Georgia, serif" font-size="23">Custom WordPress · enterprise AEM · API-driven websites</text>
+  <path d="M76 520 H348 L410 458 H822 L872 408 H1106" fill="none" stroke="#2557d6" stroke-width="3" />
+  <circle cx="76" cy="520" r="7" fill="#f3f6f5" stroke="#2557d6" stroke-width="3" />
+  <circle cx="872" cy="408" r="7" fill="#f3f6f5" stroke="#2557d6" stroke-width="3" />
+  <text x="402" y="510" fill="#2557d6" font-family="Consolas, monospace" font-size="17" letter-spacing="1">IMPLEMENTATION → REUSABLE SYSTEMS → OWNERSHIP</text>
+</svg>

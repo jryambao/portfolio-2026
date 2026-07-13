@@ -1,20 +1,82 @@
 .contact-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 28px;
-  border-top: 1px solid var(--line);
+  min-height: 100svh;
+  background: var(--carbon);
+  color: var(--draft);
+}
 
-  p:not(.eyebrow) {
-    max-width: 720px;
-    color: var(--muted);
-    line-height: 1.7;
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(430px, 0.95fr);
+  gap: clamp(52px, 8vw, 130px);
+  padding-block: clamp(84px, 10vw, 148px) 44px;
+
+  .section-label {
+    color: #7ea0ff;
+  }
+
+  h2 {
+    max-width: 740px;
+    color: var(--draft);
+  }
+
+  > div:first-child > p:last-child {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: #c1cbcd;
+    font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  }
+
+  address {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 32px;
+    margin-top: 38px;
+    border-top: 1px solid #516066;
+    padding-top: 28px;
+    color: #c1cbcd;
+    font-family: var(--font-utility);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+
+    a {
+      color: #7ea0ff;
+    }
   }
 }
 
 .contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 10px;
+  align-self: center;
+
+  .contact-primary {
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid var(--signal);
+    color: #ff856f;
+    font-family: var(--font-utility);
+    font-size: 0.92rem;
+    text-transform: uppercase;
+  }
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 24px;
+    margin-top: 24px;
+
+    a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #7ea0ff;
+      font-family: var(--font-utility);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+    }
+  }
 }
