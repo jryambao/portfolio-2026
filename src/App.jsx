@@ -1,14 +1,12 @@
 import { Analytics } from '@vercel/analytics/react';
-import { Header } from './components/layout/Header.jsx';
 import { useEffect } from 'react';
+import { Header } from './components/layout/Header.jsx';
+import { ScrollProgress } from './components/motion/ScrollProgress.jsx';
 import { CareerProgression } from './components/sections/CareerProgression.jsx';
 import { ContactConclusion } from './components/sections/ContactConclusion.jsx';
-import { DevelopmentPrinciples } from './components/sections/DevelopmentPrinciples.jsx';
-import { EnterpriseLayer } from './components/sections/EnterpriseLayer.jsx';
-import { EvidenceIndex } from './components/sections/EvidenceIndex.jsx';
 import { OpeningStatement } from './components/sections/OpeningStatement.jsx';
 import { ProjectDossiers } from './components/sections/ProjectDossiers.jsx';
-import { WorkingMethod } from './components/sections/WorkingMethod.jsx';
+import { TechnicalOverview } from './components/sections/TechnicalOverview.jsx';
 import {
   aiPractice,
   capabilityGroups,
@@ -16,13 +14,14 @@ import {
   enterpriseExperience,
   learningBackground,
   navItems,
-  principles,
   profile,
   projectCaseStudies,
   workflow,
 } from './data/portfolio.js';
 
 function App() {
+  const analyticsEnabled = !['localhost', '127.0.0.1'].includes(window.location.hostname);
+
   useEffect(() => {
     const targetId = decodeURIComponent(window.location.hash.slice(1));
     if (!targetId) return undefined;
@@ -44,6 +43,7 @@ function App() {
 
   return (
     <div className="site-shell">
+      <ScrollProgress />
       <Header
         navItems={navItems}
         resumeHref={profile.resumeHref}
@@ -52,19 +52,21 @@ function App() {
 
       <main id="main-content" tabIndex="-1">
         <OpeningStatement profile={profile} />
+        <ProjectDossiers projects={projectCaseStudies} />
         <CareerProgression
           chapters={careerChapters}
           learningBackground={learningBackground}
         />
-        <ProjectDossiers projects={projectCaseStudies} />
-        <EnterpriseLayer experience={enterpriseExperience} />
-        <WorkingMethod workflow={workflow} aiPractice={aiPractice} />
-        <EvidenceIndex groups={capabilityGroups} />
-        <DevelopmentPrinciples principles={principles} />
+        <TechnicalOverview
+          experience={enterpriseExperience}
+          groups={capabilityGroups}
+          workflow={workflow}
+          aiPractice={aiPractice}
+        />
         <ContactConclusion profile={profile} />
       </main>
 
-      <Analytics />
+      {analyticsEnabled ? <Analytics /> : null}
     </div>
   );
 }

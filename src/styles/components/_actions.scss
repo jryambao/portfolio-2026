@@ -1,13 +1,14 @@
-.text-action,
-.external-link,
-.capability-index a,
-.contact-actions a {
+.primary-action,
+.secondary-action,
+.utility-action,
+.contact-primary,
+.contact-links a {
   svg {
     flex: 0 0 auto;
     width: 17px;
     height: 17px;
     stroke-width: 1.8;
-    transition: translate 160ms ease;
+    transition: translate 180ms ease;
   }
 
   &:hover svg,
@@ -16,19 +17,29 @@
   }
 }
 
-.text-action {
-  display: flex;
-  min-height: 48px;
+.primary-action,
+.secondary-action,
+.utility-action {
+  min-height: 50px;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  border-bottom: 1px solid var(--line);
-  color: var(--carbon);
+  justify-content: center;
+  gap: 12px;
+  padding: 0 18px;
   font-family: var(--font-utility);
-  font-size: 0.86rem;
+  font-size: 0.72rem;
+}
 
-  &.is-primary {
-    border-color: var(--blueprint);
-    color: var(--blueprint-dark);
-  }
+.primary-action {
+  background: var(--blueprint);
+  color: #071018;
+}
+
+.secondary-action {
+  border: 1px solid var(--line);
+  color: var(--carbon);
+}
+
+.utility-action {
+  color: var(--graphite);
 }

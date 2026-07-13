@@ -4,7 +4,7 @@ export const profile = {
   roleLine: 'Frontend / WordPress / AEM',
   location: 'Santa Rosa, Laguna, Philippines',
   availability: 'Available for the right role',
-  heading: 'I build websites where design, content systems, and production code meet.',
+  heading: 'Frontend systems that survive production.',
   introduction:
     'Frontend and WordPress developer with more than three years of experience across custom themes, enterprise AEM platforms, API-driven websites, reusable components, and production troubleshooting.',
   email: 'johnralph266@gmail.com',
@@ -17,12 +17,11 @@ export const profile = {
 };
 
 export const navItems = [
-  { label: 'Progression', href: '#progression-title' },
-  { label: 'Project dossiers', href: '#projects-title' },
-  { label: 'How I work', href: '#method-title' },
+  { label: 'Work', href: '#work' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Systems', href: '#systems' },
   { label: 'Contact', href: '#contact' },
 ];
-
 export const careerChapters = [
   {
     chapter: '01',
@@ -284,8 +283,8 @@ export const capabilityGroups = [
     title: 'Core frontend',
     items: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'Responsive development', 'Accessibility', 'Animation', 'Browser testing'],
     evidence: [
-      { label: 'Figma-to-production work', href: '#projects-title' },
-      { label: 'Cross-browser WordPress builds', href: '#progression-title' },
+      { label: 'Figma-to-production work', href: '#work' },
+      { label: 'Cross-browser WordPress builds', href: '#experience' },
     ],
   },
   {
@@ -317,15 +316,6 @@ export const capabilityGroups = [
     index: '05',
     title: 'AI-assisted development',
     items: ['Codex', 'Claude', 'Gemini', 'Repository instructions', 'Structured prompting', 'Code review', 'Design-to-code workflows'],
-    evidence: [{ label: 'How I work', href: '#method-title' }],
+    evidence: [{ label: 'How I work', href: '#systems' }],
   },
-];
-
-export const principles = [
-  'Reusability matters more than repeatedly building isolated pages.',
-  'A good component must work for developers, designers, and content authors.',
-  'A design is not finished when it only looks correct on one screen.',
-  'Production environments reveal problems that local development cannot.',
-  'AI can increase speed, but context and review determine quality.',
-  'Good frontend development connects visual intent with maintainable systems.',
 ];

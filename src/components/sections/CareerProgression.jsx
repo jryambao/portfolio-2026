@@ -1,75 +1,66 @@
+import { Reveal } from '../motion/Reveal.jsx';
 import { SectionIntro } from '../ui/SectionIntro.jsx';
 
 export function CareerProgression({ chapters, learningBackground }) {
   return (
-    <section className="career-section section-shell" id="progression" aria-labelledby="progression-title">
+    <Reveal as="section" className="career-section section-shell" id="experience" aria-labelledby="experience-title">
       <SectionIntro
-        label="Career progression"
-        titleId="progression-title"
-        title="Progression, not a flat skills list."
-        introduction="Each role changed the scale of the problems I could take on."
+        label="Experience"
+        titleId="experience-title"
+        title="Three roles. Increasing ownership."
+        introduction="From design implementation to enterprise components and production delivery."
       />
 
       <ol className="career-list">
-        {chapters.map((chapter) => (
-          <li id={`career-chapter-${chapter.chapter}`} key={chapter.chapter}>
+        {chapters.map((chapter, index) => (
+          <Reveal
+            as="li"
+            id={`career-chapter-${chapter.chapter}`}
+            key={chapter.chapter}
+            delay={index * 70}
+          >
             <article className="career-entry">
               <div className="chapter-meta">
-                <span className="chapter-number">{chapter.chapter}</span>
+                <span>{chapter.chapter}</span>
                 <p>{chapter.period}</p>
               </div>
 
-              <div className="career-marker" aria-hidden="true">
-                <span />
-              </div>
-
               <div className="chapter-role">
-                <h3>{chapter.title}</h3>
-                <p>{chapter.role}</p>
-                <span>{chapter.company}</span>
+                <p>{chapter.company}</p>
+                <h3>{chapter.role}</h3>
               </div>
 
-              <div className="chapter-growth">
-                <p className="field-label">Capability gained</p>
-                <p className="capability-copy">{chapter.capability}</p>
-                <ul className="responsibility-list">
-                  {chapter.responsibilities.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
+              <div className="chapter-proof">
+                <p>{chapter.capability}</p>
+                <ul className="evidence-line" aria-label={`${chapter.title} technologies`}>
+                  {chapter.evidence.map((item) => <li key={item}>{item}</li>)}
                 </ul>
-                <ul className="evidence-line" aria-label={`${chapter.title} evidence`}>
-                  {chapter.evidence.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <p className="chapter-lesson">
-                  <span>Carried forward</span>
-                  {chapter.lesson}
-                </p>
               </div>
+
+              <details className="career-details">
+                <summary>Role details</summary>
+                <ul>
+                  {chapter.responsibilities.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+                <p><span>Carried forward:</span> {chapter.lesson}</p>
+              </details>
             </article>
-          </li>
+          </Reveal>
         ))}
       </ol>
 
-      <div className="progression-summary">
-        <p className="field-label">What changed</p>
-        <p>Page implementation → reusable systems → production ownership</p>
-      </div>
-
-      <aside className="learning-background" aria-labelledby="learning-title">
-        <p className="field-label" id="learning-title">Before the first role</p>
+      <aside className="learning-background" aria-label="Education and training">
+        <p className="field-label">Education + training</p>
         <div>
           {learningBackground.map((item) => (
             <article key={item.title}>
               <h3>{item.title}</h3>
-              <p>{item.place}</p>
-              <span>{item.period}</span>
+              <p>{item.place} / {item.period}</p>
               {item.note ? <small>{item.note}</small> : null}
             </article>
           ))}
         </div>
       </aside>
-    </section>
+    </Reveal>
   );
 }

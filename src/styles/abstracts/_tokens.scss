@@ -1,20 +1,22 @@
 :root {
-  color-scheme: light;
-  --paper: #f3f6f5;
-  --draft: #fcfdfc;
-  --carbon: #172126;
-  --graphite: #566167;
-  --blueprint: #2557d6;
-  --blueprint-dark: #173fae;
-  --signal: #b93826;
-  --line: #aeb9bc;
-  --line-soft: #d7dfe0;
-  --carbon-soft: #243239;
+  color-scheme: dark;
+  --paper: #0c1117;
+  --draft: #121a22;
+  --panel-strong: #17222c;
+  --surface: #1d2a35;
+  --carbon: #dce6ea;
+  --carbon-soft: #c1cdd2;
+  --graphite: #91a1aa;
+  --blueprint: #6d8cff;
+  --blueprint-dark: #8ea5ff;
+  --signal: #e8b86a;
+  --line: #31414d;
+  --line-soft: #202d37;
   --font-display: "Geologica", "Arial Narrow", "Segoe UI", sans-serif;
   --font-reading: "Source Serif 4", Georgia, serif;
   --font-utility: "IBM Plex Mono", Consolas, monospace;
-  --max-width: 1440px;
-  --gutter: clamp(24px, 4vw, 64px);
-  --section-space: clamp(88px, 10vw, 152px);
-  --header-height: 76px;
+  --max-width: 1320px;
+  --gutter: clamp(24px, 4vw, 56px);
+  --section-space: clamp(64px, 6vw, 88px);
+  --header-height: 72px;
 }

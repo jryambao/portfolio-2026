@@ -6,7 +6,7 @@
 
 html {
   background: var(--paper);
-  scroll-padding-top: calc(var(--header-height) + 24px);
+  scroll-padding-top: calc(var(--header-height) + 20px);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,6 +18,7 @@ html {
 body {
   min-width: 320px;
   margin: 0;
+  overflow-x: hidden;
   background: var(--paper);
   color: var(--carbon);
   font-family: var(--font-reading);
@@ -61,12 +62,10 @@ ol {
   list-style: none;
 }
 
-address {
-  font-style: normal;
-}
-
+address,
 figure {
   margin: 0;
+  font-style: normal;
 }
 
 summary {
@@ -75,7 +74,7 @@ summary {
 
 ::selection {
   background: var(--blueprint);
-  color: var(--draft);
+  color: #071018;
 }
 
 :focus-visible {
@@ -99,13 +98,9 @@ main:focus {
 
 section[id],
 article[id],
-header[id],
-footer[id] {
-  scroll-margin-top: calc(var(--header-height) + 24px);
-}
-
+footer[id],
 h2[id] {
-  scroll-margin-top: calc(var(--header-height) + 66px);
+  scroll-margin-top: calc(var(--header-height) + 20px);
 }
 
 @media (prefers-reduced-motion: reduce) {

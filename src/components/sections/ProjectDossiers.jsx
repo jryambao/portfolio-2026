@@ -1,43 +1,15 @@
 import { ArrowUpRight } from 'lucide-react';
+import { Reveal } from '../motion/Reveal.jsx';
 import { SectionIntro } from '../ui/SectionIntro.jsx';
 
-function Fact({ label, children }) {
-  if (!children) return null;
-
+function ProjectCard({ project, position }) {
   return (
-    <div>
-      <dt>{label}</dt>
-      <dd>{children}</dd>
-    </div>
-  );
-}
-
-function ProjectDossier({ project }) {
-  return (
-    <article className="project-dossier">
-      <header className="dossier-header" id={`project-${project.id}`}>
-        <span className="dossier-number">{project.index}</span>
-        <h3>{project.name}</h3>
-        <dl className="dossier-meta">
-          <div>
-            <dt>Type</dt>
-            <dd>{project.category}</dd>
-          </div>
-          <div>
-            <dt>Stack</dt>
-            <dd>{project.stack}</dd>
-          </div>
-          <div>
-            <dt>Integration</dt>
-            <dd>{project.integration}</dd>
-          </div>
-        </dl>
-        <a className="external-link" href={project.url} target="_blank" rel="noreferrer">
-          Visit {project.name}
-          <ArrowUpRight aria-hidden="true" />
-        </a>
-      </header>
-
+    <Reveal
+      as="article"
+      className="project-card"
+      delay={(position % 3) * 70}
+      id={`project-${project.id}`}
+    >
       <figure className="project-media">
         <img
           src={project.image.src}
@@ -47,72 +19,55 @@ function ProjectDossier({ project }) {
           loading="lazy"
           decoding="async"
         />
+        <figcaption>{project.category}</figcaption>
       </figure>
-      <p className="media-caption">{project.image.alt}</p>
 
-      <dl className="dossier-facts">
-        <Fact label="Context">{project.context}</Fact>
-        <Fact label="Challenge">{project.challenge}</Fact>
-        <Fact label="Approach">{project.approach}</Fact>
-        <Fact label="Result">{project.outcome}</Fact>
-        <Fact label="Learning">{project.learning}</Fact>
-      </dl>
-
-      <details className="implementation-notes">
-        <summary>Open implementation notes</summary>
-        <div className="implementation-body">
-          <div>
-            <p className="field-label">My role</p>
-            <p>{project.role}</p>
-          </div>
-          <div>
-            <p className="field-label">Implementation</p>
-            <ul className="evidence-line">
-              {project.implementation.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          {project.contentGap ? (
-            <p className="content-gap">
-              <span>Documentation note</span>
-              {project.contentGap}
-            </p>
-          ) : null}
+      <div className="project-card-body">
+        <div className="project-card-heading">
+          <span>{project.index}</span>
+          <h3>{project.name}</h3>
+          <a href={project.url} target="_blank" rel="noreferrer" aria-label={`Visit ${project.name}`}>
+            <ArrowUpRight aria-hidden="true" />
+          </a>
         </div>
-      </details>
-    </article>
+
+        <p className="project-context">{project.context}</p>
+        <p className="project-outcome"><span>Proof</span>{project.outcome}</p>
+
+        <ul className="project-stack" aria-label={`${project.name} technologies`}>
+          {project.implementation.map((item) => <li key={item}>{item}</li>)}
+        </ul>
+
+        <details className="project-details">
+          <summary>Implementation notes</summary>
+          <div>
+            <p><span>Role</span>{project.role}</p>
+            {project.challenge ? <p><span>Challenge</span>{project.challenge}</p> : null}
+            <p><span>Approach</span>{project.approach}</p>
+            {project.contentGap ? <small>{project.contentGap}</small> : null}
+          </div>
+        </details>
+      </div>
+    </Reveal>
   );
 }
 
 export function ProjectDossiers({ projects }) {
   return (
-    <section className="projects-section" id="project-dossiers" aria-labelledby="projects-title">
-      <div className="section-shell projects-intro-layout">
+    <section className="projects-section" id="work" aria-labelledby="work-title">
+      <Reveal className="section-shell projects-intro-layout">
         <SectionIntro
-          label="Project dossiers"
-          titleId="projects-title"
-          title="Selected work, documented as decisions."
-          introduction="The useful part of a project is not just how it looked. It is the system, constraint, and production problem behind it."
+          label="Selected work"
+          titleId="work-title"
+          title="Live work. Real constraints."
+          introduction="Scan the outcome first; open the implementation notes only when you want the engineering detail."
         />
+        <p className="project-count"><strong>{projects.length}</strong> production projects</p>
+      </Reveal>
 
-        <nav className="project-index" aria-label="Project dossier index">
-          <ol>
-            {projects.map((project) => (
-              <li key={project.id}>
-                <a href={`#project-${project.id}`}>
-                  <span>{project.index}</span>
-                  {project.name}
-                </a>
-              </li>
-            ))}
-          </ol>
-        </nav>
-      </div>
-
-      <div className="dossier-stack">
-        {projects.map((project) => (
-          <ProjectDossier key={project.id} project={project} />
+      <div className="section-shell project-grid">
+        {projects.map((project, index) => (
+          <ProjectCard key={project.id} project={project} position={index} />
         ))}
       </div>
     </section>

@@ -1,5 +1,17 @@
 # Portfolio Redesign Direction
 
+## July 2026 revision: Dark Proof Index
+
+The first redesign proved the career progression clearly, but it required too much sequential reading and created a page more than 15,000 pixels tall at a standard desktop viewport. The revised direction is intentionally skim-first: a concise thesis, production project grid, three compact experience rows, one technical systems matrix, and a direct contact block.
+
+- **Palette:** Ink `#0C1117`, Panel `#121A22`, Steel `#1D2A35`, Mist `#DCE6EA`, Cobalt `#6D8CFF`, and Signal `#E8B86A`.
+- **Typography:** Geologica remains the decisive display face, Source Serif 4 is reserved for short explanatory copy, and IBM Plex Mono carries proof labels and technical metadata.
+- **Signature:** a thin build-signal motif connects design, components, data, and production while the page-level progress line responds to scrolling.
+- **Motion:** lightweight Intersection Observer reveals use opacity and short translation, run once, and become static when reduced motion is requested.
+- **Content rule:** outcomes and responsibilities are visible at scanning speed; longer implementation notes are optional disclosure content.
+
+The original Career Field Log proposal remains below as an audit trail, but the production implementation now follows this Dark Proof Index revision.
+
 ## 1. Subject, audience, and single job
 
 This portfolio is a career field log for John Ralph Yambao: a frontend and WordPress developer whose work has progressed from design implementation, through reusable CMS systems and enterprise AEM engineering, into ownership of API-driven production websites.

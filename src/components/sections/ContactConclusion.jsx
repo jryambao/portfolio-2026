@@ -1,48 +1,38 @@
 import { ArrowUp, ArrowUpRight, Download, Mail } from 'lucide-react';
+import { Reveal } from '../motion/Reveal.jsx';
 
 export function ContactConclusion({ profile }) {
   return (
-    <footer className="contact-section" id="contact">
+    <Reveal as="footer" className="contact-section" id="contact">
       <div className="section-shell contact-layout">
         <div>
-          <p className="section-label">Contact</p>
-          <h2>The next useful system could be yours.</h2>
-          <p>
-            I am open to frontend and WordPress roles involving design-to-code implementation,
-            component systems, AEM or enterprise CMS work, API-driven websites, and AI-assisted
-            development workflows.
-          </p>
+          <p className="section-label">Available for the right role</p>
+          <h2>Need a frontend developer who can follow the work into production?</h2>
         </div>
 
-        <nav className="contact-actions" aria-label="Contact and profile links">
+        <div className="contact-copy">
+          <p>
+            I work across design implementation, WordPress systems, AEM components,
+            API-driven websites, and the debugging that happens after launch.
+          </p>
           <a className="contact-primary" href={profile.emailHref}>
             Email John
             <Mail aria-hidden="true" />
           </a>
-          <div>
-            <a href={profile.resumeHref} target="_blank" rel="noreferrer">
-              Download resume
-              <Download aria-hidden="true" />
-            </a>
-            {profile.links.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
-                {link.label}
-                <ArrowUpRight aria-hidden="true" />
-              </a>
-            ))}
-            <a href="#top">
-              Back to top
-              <ArrowUp aria-hidden="true" />
-            </a>
-          </div>
-        </nav>
+        </div>
 
-        <address>
-          <span>{profile.name}</span>
-          <span>{profile.location}</span>
-          <a href={profile.emailHref}>{profile.email}</a>
-        </address>
+        <nav className="contact-links" aria-label="Contact and profile links">
+          <a href={profile.resumeHref} target="_blank" rel="noreferrer">
+            Resume <Download aria-hidden="true" />
+          </a>
+          {profile.links.map((link) => (
+            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+              {link.label} <ArrowUpRight aria-hidden="true" />
+            </a>
+          ))}
+          <a href="#top">Back to top <ArrowUp aria-hidden="true" /></a>
+        </nav>
       </div>
-    </footer>
+    </Reveal>
   );
 }
