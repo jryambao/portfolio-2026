@@ -7,8 +7,8 @@ export function CareerProgression({ chapters, learningBackground }) {
       <SectionIntro
         label="Experience"
         titleId="experience-title"
-        title="Three roles. Increasing ownership."
-        introduction="From design implementation to enterprise components and production delivery."
+        title="Work experience and responsibilities."
+        introduction="Production responsibilities across WordPress, AEM, API integrations, and delivery."
       />
 
       <ol className="career-list">
@@ -37,13 +37,12 @@ export function CareerProgression({ chapters, learningBackground }) {
                 </ul>
               </div>
 
-              <details className="career-details">
-                <summary>Role details</summary>
+              <div className="career-responsibilities">
+                <p className="field-label">Responsibilities</p>
                 <ul>
                   {chapter.responsibilities.map((item) => <li key={item}>{item}</li>)}
                 </ul>
-                <p><span>Carried forward:</span> {chapter.lesson}</p>
-              </details>
+              </div>
             </article>
           </Reveal>
         ))}

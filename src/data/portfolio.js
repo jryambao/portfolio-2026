@@ -32,13 +32,11 @@ export const careerChapters = [
     capability:
       'Turning approved PSD and Figma designs into responsive, cross-browser WordPress builds.',
     responsibilities: [
-      'Converted visual designs into custom WordPress themes.',
-      'Balanced design accuracy with responsive behavior and browser compatibility.',
-      'Optimized frontend code and imagery while maintaining multiple client websites.',
+      'Converted PSD and Figma designs into fully responsive, cross-browser-compatible WordPress websites using custom themes.',
+      'Optimized frontend code and imagery for faster page loads, stronger Lighthouse scores, and better visual quality across client projects.',
+      'Maintained multiple client websites simultaneously while preserving brand consistency and design accuracy across deliverables.',
     ],
     evidence: ['Custom themes', 'Responsive implementation', 'Performance basics'],
-    lesson:
-      'A design handoff is the beginning of implementation decisions, not the end of them.',
   },
   {
     chapter: '02',
@@ -49,13 +47,14 @@ export const careerChapters = [
     capability:
       'Building reusable AEM components and authoring tools for large content platforms, migrations, and production release cycles.',
     responsibilities: [
-      'Built AEM components, dialogs, templates, workflows, Sling Models, servlets, and OSGi services.',
-      'Contributed to large-scale CMS migration work while preserving JCR content integrity.',
-      'Supported staging and production releases through debugging, Groovy utilities, QA collaboration, and code review.',
+      'Designed and built custom AEM components, templates, workflows, and dialogs from scratch for enterprise-scale content requirements.',
+      'Developed Sling Models, servlets, and OSGi services in Java to support dynamic content delivery and reduce hardcoded frontend dependencies.',
+      'Led website migration work into Adobe Experience Manager, managing JCR content structures and maintaining data integrity during transitions.',
+      'Authored Groovy scripts for debugging, environment configuration, and data migration tasks, reducing manual release and troubleshooting effort.',
+      'Implemented Adobe Target for personalization and A/B testing while contributing to Agile sprint planning, bi-weekly deployments, and code reviews.',
+      'Recognized as Best Performer of 2024 within the development team.',
     ],
-    evidence: ['HTL', 'Sling Models', 'Dialogs', 'JCR migration', 'Code review'],
-    lesson:
-      'A useful component must serve the page, the platform, and the person authoring the content.',
+    evidence: ['HTL', 'Sling Models', 'OSGi', 'JCR migration', 'Adobe Target'],
   },
   {
     chapter: '03',
@@ -66,13 +65,13 @@ export const careerChapters = [
     capability:
       'Owning Figma-to-production delivery across custom WordPress systems, API-backed listings, booking workflows, deployments, and troubleshooting.',
     responsibilities: [
-      'Built editor-friendly ACF Pro structures and reusable frontend patterns.',
-      'Integrated live vessel and property data into production listing and booking experiences.',
-      'Managed staging and production deployments while reviewing pull requests for responsive, maintainable delivery.',
+      'Delivered 5 production WordPress websites end-to-end for yacht charter and real estate clients, from Figma design handoff through live deployment.',
+      'Built Split Yacht Charter as a WooCommerce-based booking platform integrated with the NAUSYS API, covering real-time availability, dynamic pricing, yacht listings, and booking workflows.',
+      'Integrated third-party APIs and live data feeds for EJ Yachts and Iman Real Estate, enabling dynamic property and vessel listings with less manual content work.',
+      'Built editor-friendly ACF Pro content structures and optimized frontend performance through lazy loading, minification, and semantic markup.',
+      'Managed staging and production deployments across WP Engine, HostArmada, and SiteGround while reviewing PRs for responsive, performance-focused delivery.',
     ],
     evidence: ['ACF Pro', 'WooCommerce', 'NAUSYS API', 'Hosting', 'PR review'],
-    lesson:
-      'Production ownership means following the work past the browser and into content, data, hosting, and support.',
   },
 ];
 

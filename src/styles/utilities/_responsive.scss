@@ -55,8 +55,9 @@
   .career-entry {
     grid-template-columns: 110px minmax(220px, 0.8fr) minmax(300px, 1.2fr);
 
-    .career-details {
+    .career-responsibilities {
       grid-column: 2 / -1;
+      grid-template-columns: minmax(220px, 0.8fr) minmax(300px, 1.2fr);
     }
   }
 
@@ -115,8 +116,13 @@
 
     .chapter-role,
     .chapter-proof,
-    .career-details {
+    .career-responsibilities {
       grid-column: 2;
+    }
+
+    .career-responsibilities {
+      grid-template-columns: 1fr;
+      gap: 12px;
     }
   }
 
@@ -266,7 +272,7 @@
 
     .chapter-role,
     .chapter-proof,
-    .career-details {
+    .career-responsibilities {
       grid-column: 1;
     }
   }
