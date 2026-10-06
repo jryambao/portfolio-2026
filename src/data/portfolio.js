@@ -59,19 +59,38 @@ export const careerChapters = [
   {
     chapter: '03',
     title: 'Moving from implementation to ownership',
-    period: 'Oct 2025 — Present',
+    period: 'Oct 2025 — Sep 2026',
     role: 'Frontend WordPress Developer',
     company: 'Ankor / Ingnius',
     capability:
       'Owning Figma-to-production delivery across custom WordPress systems, API-backed listings, booking workflows, deployments, and troubleshooting.',
     responsibilities: [
-      'Delivered 5 production WordPress websites end-to-end for yacht charter and real estate clients, from Figma design handoff through live deployment.',
+      'Delivered 7 production WordPress websites end-to-end for yacht charter and real estate clients, from Figma design handoff through live deployment.',
       'Built Split Yacht Charter as a WooCommerce-based booking platform integrated with the NAUSYS API, covering real-time availability, dynamic pricing, yacht listings, and booking workflows.',
       'Integrated third-party APIs and live data feeds for EJ Yachts and Iman Real Estate, enabling dynamic property and vessel listings with less manual content work.',
       'Built editor-friendly ACF Pro content structures and optimized frontend performance through lazy loading, minification, and semantic markup.',
       'Managed staging and production deployments across WP Engine, HostArmada, and SiteGround while reviewing PRs for responsive, performance-focused delivery.',
     ],
     evidence: ['ACF Pro', 'WooCommerce', 'NAUSYS API', 'Hosting', 'PR review'],
+  },
+  {
+    chapter: '04',
+    title: 'Supporting many sites at once',
+    period: 'Aug 2026 — Present',
+    role: 'Freelance WordPress Developer',
+    company: 'Self-employed (UK agency clients)',
+    capability:
+      'Handling WordPress builds, forms, page speed, and technical SEO for a UK digital agency across 30+ client sites.',
+    responsibilities: [
+      'Provide ongoing WordPress development and technical SEO support to a UK-based digital agency on a monthly retainer, across client sites in manufacturing, IT services, events, finance, and B2B SaaS.',
+      'Set up a WooCommerce store for an industrial equipment dealer, building out the product catalogue and replacing 150+ product images with optimized versions.',
+      'Built Gravity Forms lead capture and quote request forms, including replacing five third-party chatbot widgets with native forms, conditional fields, notifications, and mobile styling.',
+      'Improved page speed and Core Web Vitals by fixing render-blocking and delayed scripts, animation-gated LCP, tag loading, and caching setup.',
+      'Optimized hundreds of media library images (compressed, resized, converted to WebP) while repointing every page reference and keeping alt text intact.',
+      'Resolved technical SEO issues from Screaming Frog audits: canonicals, titles and meta descriptions, broken and redirected links, sitemaps, schema, and security headers.',
+      'Built pages, case studies, landing pages, and blog posts in Gutenberg, Elementor, Divi, WPBakery, and Oxygen, including custom ACF blocks.',
+    ],
+    evidence: ['WooCommerce', 'Gravity Forms', 'Core Web Vitals', 'Image optimization', 'Technical SEO'],
   },
 ];
 
@@ -289,10 +308,11 @@ export const capabilityGroups = [
   {
     index: '02',
     title: 'WordPress systems',
-    items: ['Custom themes', 'PHP', 'ACF Pro', 'WooCommerce', 'Elementor', 'Reusable templates', 'Migrations', 'Deployment', 'Performance debugging'],
+    items: ['Custom themes', 'PHP', 'ACF Pro', 'WooCommerce', 'Gravity Forms', 'Elementor', 'Divi', 'Technical SEO', 'Reusable templates', 'Migrations', 'Deployment', 'Performance debugging'],
     evidence: [
       { label: 'Split Yacht Charter', href: '#project-split-yacht-charter' },
       { label: 'Ankor / Ingnius', href: '#career-chapter-03' },
+      { label: 'Freelance', href: '#career-chapter-04' },
     ],
   },
   {
