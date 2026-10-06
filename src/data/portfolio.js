@@ -86,7 +86,7 @@ export const careerChapters = [
       'Set up a WooCommerce store for an industrial equipment dealer, building out the product catalogue and replacing 150+ product images with optimized versions.',
       'Built Gravity Forms lead capture and quote request forms, including replacing five third-party chatbot widgets with native forms, conditional fields, notifications, and mobile styling.',
       'Improved page speed and Core Web Vitals by fixing render-blocking and delayed scripts, animation-gated LCP, tag loading, and caching setup.',
-      'Raised a static React site's mobile PageSpeed score from 30 to 80 by precompiling JSX to remove in-browser Babel, moving to React production builds, deferring scripts, and preloading fonts, with all 95 pages checked against the original. Also added security headers, schema, and a lead capture pop-up with a PHP form handler.',
+      "Raised a static React site's mobile PageSpeed score from 30 to 80 by precompiling JSX to remove in-browser Babel, moving to React production builds, deferring scripts, and preloading fonts, with all 95 pages checked against the original. Also added security headers, schema, and a lead capture pop-up with a PHP form handler.",
       'Optimized hundreds of media library images (compressed, resized, converted to WebP) while repointing every page reference and keeping alt text intact.',
       'Resolved technical SEO issues from Screaming Frog audits: canonicals, titles and meta descriptions, broken and redirected links, sitemaps, schema, and security headers.',
       'Built pages, case studies, landing pages, and blog posts in Gutenberg, Elementor, Divi, WPBakery, and Oxygen, including custom ACF blocks.',
